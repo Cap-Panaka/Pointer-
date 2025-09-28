@@ -1,5 +1,6 @@
 /*Write a program to input 5 integers into an array and use a pointer to display them.
-
+Enter 5 integers: 5 6 7 8 9
+The integers are: 5 6 7 8 9 
 */
 #include <stdio.h>
 int main()
