@@ -1,5 +1,14 @@
 /*Write a program to count how many positive and negative numbers or odd and even numbers are in an
-array using pointer traversal. */
+array using pointer traversal.
+
+Enter how many numbers you want to input: 8
+Enter the numbers: 1 -1 6  9 90 89 4 5
+******COUNTER.EXE*******
+Positive NUmbers: 7
+Negative NUmbers: 1
+Odd Numbers: 5
+Even Numbers: 3
+*/
 
 #include<stdio.h>
 int main()
