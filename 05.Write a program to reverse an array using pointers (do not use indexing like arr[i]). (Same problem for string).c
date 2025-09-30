@@ -57,3 +57,38 @@ int main()
 }
 
 
+
+//Another way(2)
+
+#include<stdio.h>
+int main() 
+{
+    int i,n,*p,*p1;
+    printf("HOw many elements you want to input: ");
+    scanf("%d",&n);
+    
+    printf("Enter the elements: ");
+    int ar[n];
+    p=ar;
+    p1=ar+n-1;
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",(p+i));
+    }
+    
+    for(i=0;i<n/2;i++)
+    {
+        int temp=*(p+i);
+        *(p+i)=*(p1-i);
+        *(p1-i)=temp;
+    }
+    
+    printf("After reversing: ");
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",*(p+i));
+    }
+    
+}
+
+
