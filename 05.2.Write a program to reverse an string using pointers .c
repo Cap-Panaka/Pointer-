@@ -1,4 +1,8 @@
-/*05.Write a program to reverse an string using pointers .*/
+/*05.Write a program to reverse an string using pointers .
+Enter string: Adiba
+Reversed string: abidA
+
+*/
 #include<stdio.h>
 int main()
 {
