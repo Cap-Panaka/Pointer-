@@ -1,5 +1,28 @@
 /*05.Write a program to reverse an string using pointers .*/
 #include<stdio.h>
+int main()
+{
+    char str[101],*p,*p2;
+    int len=0,i;
+    printf("Enter string: ");
+    gets(str);
+    for(p=str;*p!='\0';p++)
+    {
+        len++;
+    }
+    p=str;
+
+    printf("Reversed string: ");
+    for(i=(len-1);i>=0;i--)
+    {
+        printf("%c",*(p+i));
+    }
+}
+
+
+
+//ANother way
+#include<stdio.h>
 int  main()
 {
     char str[101],*p,*p1;
