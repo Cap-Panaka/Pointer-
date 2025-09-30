@@ -20,8 +20,33 @@ int main()
 }
 
 
+//Another way
+#include<stdio.h>
+int main()
+{
+    char str[101],str1[101],*p,*p1;
+    int len=0,i;
+    printf("Enter string: ");
+    gets(str);
+    for(p=str;*p!='\0';p++)
+    {
+        len++;
+    }
+    p=str;
+    p1=str1;
 
-//ANother way
+    for(i=0;i<len;i++)
+    {
+        *(p1+i)=*(p+(len-1-i));
+    }
+
+    printf("Reversed string: ");
+    puts(str1);
+}
+
+
+
+//ANother way(2)
 #include<stdio.h>
 int  main()
 {
